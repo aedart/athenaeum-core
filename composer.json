@@ -1,0 +1,53 @@
+{
+    "name": "aedart/athenaeum-core",
+    "description": "Custom implementation of Laravel's Application, intended towards integration with legacy applications",
+    "keywords": ["Athenaeum", "Core", "Application", "Legacy Applications"],
+    "homepage": "https://aedart.github.io/athenaeum/",
+    "license": "BSD-3-Clause",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Alin Eugen Deac",
+            "email": "aedart@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0.2",
+        "aedart/athenaeum-config": "6.x-dev",
+        "aedart/athenaeum-console": "6.x-dev",
+        "aedart/athenaeum-container": "6.x-dev",
+        "aedart/athenaeum-contracts": "6.x-dev",
+        "aedart/athenaeum-dto": "6.x-dev",
+        "aedart/athenaeum-events": "6.x-dev",
+        "aedart/athenaeum-maintenance-modes": "6.x-dev",
+        "aedart/athenaeum-service": "6.x-dev",
+        "aedart/athenaeum-support": "6.x-dev",
+        "aedart/athenaeum-utils": "6.x-dev",
+        "illuminate/cache": "v9.0.1",
+        "illuminate/filesystem": "v9.0.1",
+        "psr/log": "^1.1",
+        "symfony/console": "^v6.0.2",
+        "vlucas/phpdotenv": "^5.1"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^v6.0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aedart\\Core\\": "src"
+        },
+        "files": [
+            "helpers/paths.php"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "6.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
